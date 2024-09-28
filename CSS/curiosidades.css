@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --bg-color1: #fff;
+    --bg-color2:#000;
+    --bg-color3:#3f3f3f;
+    --bg-color4:#bb9002;
+    --font-color1:#ffffff;
+    --font-color2:#000;
+    --font-color3:red;
+    --font-color4:#bb9002;
+    --font-color5:#ffc70d;
+    --font-color6:#3f3f3f;
+}
+*{
+    padding:0 ;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+
+body{
+    background: var(--bg-color1);
+}
+
+header{
+    position:absolute;
+    width:100%;
+    left:0;
+    z-index:1000;
+    
+}
+#icon{
+    display:flex;
+    width:10%;
+    margin-top:-1%;
+    margin-left:-1%;
+    transition:0.5s;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:-5.5%;
+    margin-left:-22%;
+    transition:0.5s;
+    font-family: Body-Font;
+}
+
+nav ul{
+    list-style:none;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    text-decoration:none;
+    padding:25px;
+    color:var(--font-color2);
+    font-size:15px;
+    font-weight:bolder;
+}
+#sobre{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:-1.7%;
+    margin-left: 69%;
+}
+
+.espaco{
+    position:relative;
+    box-shadow:1px -50px 100px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0%;
+    padding: 15px;
+    width: 100%;
+    height: 1100px;
+    background-color: var(--bg-color1);
+}
+
+.infcard{
+    
+    width: 700px;
+    vertical-align: top;
+    margin: 10px;
+
+}
+.imagembanner img{
+    display: flex;
+    margin-left:20%;
+    margin-top:30%;
+    margin-right: 0px;
+    width: 60%;
+    height: 40%;
+    box-shadow:20px 20px 40px black;
+   
+}
+.curiosidadescard{
+    
+    width: 700px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.caixa{
+    text-align:justify;
+    margin-top: -115%;
+    margin-left:12%;
+    width:200%;
+    height:auto;
+    padding: 0;
+}
+.caixa p{
+    text-align:justify;
+    font-size: 12px;
+}
+fieldset {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 70%;
+    margin-left: 0;
+    height: 460px;
+
+}
+legend {
+    font-weight: bold;
+    
+}
+fieldset ol{
+    font-size: 17px;
+    margin-left: 18px;
+}
+fieldset ol li{
+    margin-top: 12px;
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100px;
+    background:var(--bg-color2);
+}
+footer p{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:0%;
+    margin-left:0%;
+    color: var(--font-color1);
+    font-size:15px;
+}
+@media(max-width: 500px){
+    body{
+        width:100%;
+    }
+    header{
+        position:absolute;
+    }
+    nav{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: -25%;
+    }
+    nav ul{
+        display:inline-block;
+    }
+    nav ul li a {
+        color: var(--font-color2);
+        padding:9px;
+        font-size:10px;
+    }
+    #sobre{
+        margin-left:1%;
+        margin-top:1%;
+    }
+    #sobre ul li a{
+        font-size:10px;
+
+    }
+    #icon{
+        display:block;
+        width:80px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10%;
+    }
+    #banner{
+        margin-top:-25%;
+        width:100%;
+        height:800px;
+    }
+    .espaco{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:0%;
+        width:100%;
+        height:900px;
+    }
+    .caixa{
+        margin-left:-235%;
+        margin-top:-100%;
+        width:300%;
+        height:auto;
+        font-size:5px;
+    }
+    .caixa ol{
+        font-size:15px;
+        
+    }
+    .imagembanner img{
+        margin-left:20%;
+        margin-top:140%;
+        width:400px;
+        box-shadow:1px 1px 10px black;
+    }
+    footer{
+        width:100%;
+        height:200x;
+    }
+    footer p{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:0%;
+    }
+}
